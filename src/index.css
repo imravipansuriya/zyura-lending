@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Sora:wght@300;400;500;600;700;800&display=swap");
+@config "../tailwind.config.js";
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
+*{
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Sora", sans-serif;
+}
+
+.font-pattaya {
+  font-family: "Pattaya", sans-serif;
+}
+
+.font-sora {
+  font-family: "Sora", sans-serif;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.6) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0a4f9f !important;
+}
+
+.study-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #7b889a transparent;
+}
+
+.study-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.study-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.study-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #7b889a;
+}
