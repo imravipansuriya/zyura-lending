@@ -12,6 +12,7 @@ type GridCard =
     type: "text";
     title: string;
     description: string;
+    points?: string[];
     bg: string;
   };
 
@@ -19,49 +20,82 @@ const gridCards: GridCard[] = [
   { type: "image", image: quizImage, alt: "AI generated quiz" },
   {
     type: "text",
-    title: "AI Generated Quiz",
+    title: "AI-Generated MCQs",
     description:
-      "Practice smarter with AI-powered quizzes tailored to your learning level. Get instant feedback and improve faster with adaptive learning paths.",
+      "Master every subject with adaptive, performance-based MCQs:",
+    points: [
+      "Adaptive difficulty",
+      "Detailed explanations + analytics",
+      "Topic-based custom quizzes",
+    ],
     bg: "#DDE2EE",
   },
   { type: "image", image: allInOneImage, alt: "Students learning together" },
   {
     type: "text",
-    title: "AI Create Flash Cards",
+    title: "Interactive Flashcards",
     description:
-      "Turn complex topics into quick, easy-to-review flashcards instantly. Boost memory retention with smart repetition techniques.",
+      "Revise faster with AI-powered flashcards and smart retention:",
+    points: [
+      "Create flashcards from your own notes",
+      "Spaced repetition for long-term memory",
+      "Specialist-made decks available",
+    ],
     bg: "#E6F1F5",
   },
+
   {
     type: "text",
-    title: "MCQ Bank",
+    title: "Clinical Case Simulations",
     description:
-      "Access a vast collection of exam-focused multiple-choice questions. Prepare efficiently with real exam patterns and difficulty levels.",
-    bg: "#DEE8F7",
+      "Train clinical reasoning with real-world scenarios:",
+    points: [
+      "Step-by-step diagnostic thinking",
+      "Management decision pathways",
+      "Perfect for OSCE + clinical rounds",
+    ],
+    bg: "#E8E4F2",
   },
   { type: "image", image: notesImage, alt: "Doctor using tablet" },
   {
     type: "text",
-    title: "Case Study",
+    title: "Downloadable Notes",
     description:
-      "Learn through real-world medical scenarios and case-based learning. Improve clinical thinking and decision-making skills.",
-    bg: "#E8E4F2",
+      "High-yield content curated by specialists:",
+    points: [
+      "Exam-focused summaries",
+      "Regular updates",
+      "Organized for quick download",
+    ],
+    bg: "#EADDE7",
   },
   { type: "image", image: access247Image, alt: "Doctor using laptop" },
+
   { type: "image", image: flashCardsImage, alt: "Medical study workspace" },
   {
     type: "text",
-    title: "Download Notes",
+    title: "AI Study Assistant",
     description:
-      "Get high-quality, well-structured study notes anytime, anywhere. Simplify your revision with concise and exam-ready content.",
-    bg: "#EADDE7",
+      "Your personal AI tutor — always available:",
+    points: [
+      "Summaries, concept maps, quick reviews",
+      "Simplified explanations for complex topics",
+      "Create custom MCQs/flashcards instantly",
+    ],
+    bg: "#ECEEDF",
   },
+
   { type: "image", image: medicalAiImage, alt: "Medical AI tools" },
   {
     type: "text",
-    title: "Medical AI",
+    title: "Performance Analytics Dashboard",
     description:
-      "Explore powerful AI tools designed specifically for medical students. Analyze, learn, and solve problems with intelligent assistance.",
+      "Your personal AI tutor — always available:",
+    points: [
+      "Summaries, concept maps, quick reviews",
+      "Simplified explanations for complex topics",
+      "Create custom MCQs/flashcards instantly",
+    ],
     bg: "#ECEEDF",
   },
 ];
@@ -80,7 +114,7 @@ export const AIFeaturesGrid = () => {
 
       <div className="mx-auto max-w-[1920px] px-5">
         <div className="mt-10 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-           
+
           {gridCards.map((card, index) => {
             if (card.type === "image") {
               return (
@@ -100,15 +134,24 @@ export const AIFeaturesGrid = () => {
             return (
               <article
                 key={`text-${card.title}`}
-                className="flex min-h-[250px] flex-col rounded-xl p-5 md:min-h-[280px]"
+                className="flex justify-between min-h-[250px] flex-col rounded-xl p-5 md:min-h-[280px]"
                 style={{ backgroundColor: card.bg }}
               >
                 <h3 className="font-sora text-xl lg:text-2xl leading-tight text-[#1d2430]">
                   {card.title}
                 </h3>
-                <p className="mt-auto text-[12px] lg:text-[14px] leading-relaxed text-[#2b3441]">
-                  {card.description}
-                </p>
+                <div>
+                  <p className="mt-5 text-[12px] lg:text-[14px] leading-relaxed text-[#2b3441]">
+                    {card.description}
+                  </p>
+                  {card.points && (
+                    <ul className="mt-3 list-disc pl-5 text-[12px] lg:text-[14px] leading-relaxed text-[#2b3441]">
+                      {card.points.map((point) => (
+                        <li key={point}>{point}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </article>
             );
           })}

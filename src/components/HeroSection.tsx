@@ -8,9 +8,9 @@ import ScrollReveal from "../ui/ScrollReveal";
 const heroSlides = [
   {
     image: heroBanner,
-    title: "Welcome to Zyura The Medical Student Hub",
+    title: "Welcome to Your Personalized AI Learning Experience",
     description:
-      "Zyura brings everything a medical student needs into one powerful platform smart study tools, real-time collaboration, and a supportive community to help you succeed.",
+      "From AI-powered MCQs & Exams to real-world clinical simulations, We’re here to help you succeed in every stage of your medical journey.",
   },
   {
     image:
@@ -90,7 +90,7 @@ export const HeroSection = () => {
                       href="#"
                       className="rounded-xl border border-white/85 px-4 lg:px-8 py-3 lg:py-3.5 text-[14px] lg:text-base font-light text-white transition hover:bg-white/10"
                     >
-                      Take a Quiz
+                      Start Learning Now
                     </a>
                   </div>
                 </div>

@@ -6,13 +6,24 @@ import { ValueBanner } from './components/ValueBanner'
 import { FeatureCards } from './components/FeatureCards'
 import { AIFeaturesGrid } from './components/AIFeaturesGrid'
 import { PricingSection } from './components/PricingSection'
+import { StudyExamModeSection } from './components/StudyExamModeSection'
 import { AIStudySection } from './components/AIStudySection'
 import { MentorsSection } from './components/MentorsSection'
 import { CTASection } from './components/CTASection'
 import { Footer } from './components/Footer'
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from 'react'
 
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <div className='relative'>
@@ -22,6 +33,7 @@ function App() {
         <FeatureCards />
         <AIFeaturesGrid />
         <PricingSection />
+        <StudyExamModeSection />
         <AIStudySection />
         <MentorsSection />
         <CTASection />

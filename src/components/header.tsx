@@ -27,6 +27,9 @@ export default function Header() {
                             <a href="#" className="font-sora text-[16px] font-light text-white/90 transition hover:bg-primary p-3 rounded-lg" >
                                 AI Tools
                             </a>
+                            <a href="#" className="font-sora text-[16px] font-light text-white/90 transition hover:bg-primary p-3 rounded-lg" >
+                                About US
+                            </a>
                         </nav>
                         <div>
                             <a href="#" className="font-pattaya text-4xl leading-none text-white">
@@ -43,6 +46,9 @@ export default function Header() {
                                 </a>
                                 <a href="#" className="font-sora text-[16px] font-light text-white/90 transition hover:bg-primary p-3 rounded-lg" >
                                     Pricing
+                                </a>
+                                <a href="#" className="font-sora text-[16px] font-light text-white/90 transition hover:bg-primary p-3 rounded-lg" >
+                                    Contact US
                                 </a>
                             </nav>
                             <a
