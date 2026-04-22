@@ -1,12 +1,12 @@
 
 import Header from './components/header'
-import ScrollReveal from './ui/ScrollReveal'
 import { HeroSection } from './components/HeroSection'
 import { ValueBanner } from './components/ValueBanner'
 import { FeatureCards } from './components/FeatureCards'
 import { AIFeaturesGrid } from './components/AIFeaturesGrid'
 import { PricingSection } from './components/PricingSection'
 import { StudyExamModeSection } from './components/StudyExamModeSection'
+import { PersonalGroupStudySection } from './components/PersonalGroupStudySection'
 import { AIStudySection } from './components/AIStudySection'
 import { MentorsSection } from './components/MentorsSection'
 import { CTASection } from './components/CTASection'
@@ -34,6 +34,7 @@ function App() {
         <AIFeaturesGrid />
         <PricingSection />
         <StudyExamModeSection />
+        <PersonalGroupStudySection />
         <AIStudySection />
         <MentorsSection />
         <CTASection />

@@ -3,7 +3,6 @@ import { Autoplay, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import heroBanner from "../assets/hero-banner.png";   
 import SplitText from "../ui/SplitText";
-import ScrollReveal from "../ui/ScrollReveal";
 
 const heroSlides = [
   {
