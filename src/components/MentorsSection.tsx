@@ -154,8 +154,8 @@ const LucideIcon = ({
 
 export const MentorsSection = () => {
   return (
-    <section className="pt-25 lg:pt-36">
-      <div className="mx-auto mb-16 max-w-[980px] px-6">
+    <section className="pt-25 lg:pt-36" data-aos="fade-up">
+      <div className="mx-auto mb-16 max-w-[980px] px-6" data-aos="fade-up">
         <h2 className="mx-auto text-center font-sora text-2xl font-semibold text-dark md:text-3xl lg:text-[48px]">
           Expert Mentorship from Leading Professionals
         </h2>
@@ -163,9 +163,13 @@ export const MentorsSection = () => {
 
       <div className="mx-auto container px-5">
         <div className="space-y-8">
-          {mentorGroups.map((group) => (
+          {mentorGroups.map((group, groupIndex) => (
             <div key={group.title} className="space-y-4">
-              <h3 className="font-sora text-2xl font-semibold text-[#1c2330] md:text-3xl">
+              <h3
+                className="font-sora text-2xl font-semibold text-[#1c2330] md:text-3xl"
+                data-aos="fade-up"
+                data-aos-delay={groupIndex * 90}
+              >
                 {group.title}
               </h3>
 
@@ -178,7 +182,7 @@ export const MentorsSection = () => {
                 }}
                 className="h-full"
               >
-                {padMentors(group.mentors).map((mentor) => (
+                {padMentors(group.mentors).map((mentor, index) => (
                   <SwiperSlide key={`${group.title}-${mentor.name}`} className="h-auto">
                     <article
                       className={`group flex h-full flex-col overflow-hidden rounded-2xl border bg-white ${
@@ -186,6 +190,8 @@ export const MentorsSection = () => {
                           ? "border-dashed border-[#c9d3e6]"
                           : "border-[#d4dbe7]"
                       }`}
+                      data-aos="fade-up"
+                      data-aos-delay={index * 90}
                     >
                       <div className="relative h-[500px]">
                         <img

@@ -7,7 +7,7 @@ export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <header className="absolute inset-x-0 top-0 z-50 ">
+        <header className="absolute inset-x-0 top-0 z-50 " data-aos="fade-down">
 
             <div className="bg-white/10 backdrop-blur-md ">
                 <div className="max-w-[1920px] mx-auto">

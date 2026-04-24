@@ -9,10 +9,10 @@ const points = [
 
 export const PersonalGroupStudySection = () => {
   return (
-    <section className=" relative overflow-hidden py-25 lg:py-36">
+    <section className=" relative overflow-hidden py-25 lg:py-36" data-aos="fade-up">
       <div className="mx-auto container px-5">
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_0.95fr]">
-          <div className="max-w-[760px]">
+          <div className="max-w-[760px]" data-aos="fade-up">
             <p className="inline-flex w-fit rounded-full border border-[#353b48]/40 px-3 py-1 text-xs font-medium text-[#49505c] mb-8">
               PERSONAL + GROUP STUDY
             </p>
@@ -24,7 +24,12 @@ export const PersonalGroupStudySection = () => {
             </p>
             <div className="mt-10 space-y-1">
               {points.map((point, index) => (
-                <div key={point} className="flex gap-5">
+                <div
+                  key={point}
+                  className="flex gap-5"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 80}
+                >
                   <div className="flex w-[62px] shrink-0 flex-col items-center">
                     <span className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-primary font-sora text-xl font-medium text-white">
                       {index + 1}
@@ -43,7 +48,7 @@ export const PersonalGroupStudySection = () => {
               ))}
             </div>
           </div>
-          <div className="overflow-hidden rounded-[32px]">
+          <div className="overflow-hidden rounded-[32px]" data-aos="fade-left">
             <img
               src={studyImage}
               alt="Students studying together"
@@ -55,4 +60,3 @@ export const PersonalGroupStudySection = () => {
     </section>
   );
 };
-

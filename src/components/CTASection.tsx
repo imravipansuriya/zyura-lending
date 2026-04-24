@@ -3,7 +3,7 @@ import ctaBgImage from "../assets/cta-bg.png";
 
 export const CTASection = () => {
   return (
-    <section className="pt-25 lg:pt-36">
+    <section className="pt-25 lg:pt-36" data-aos="fade-up">
       <div className="relative overflow-hidden">
         <img
           src={ctaBgImage}
@@ -11,9 +11,9 @@ export const CTASection = () => {
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="mx-auto max-w-[1920px]">
+        <div className="mx-auto container px-5">
           <div className="relative flex min-h-[300px] md:min-h-[340px] flex-col lg:flex-row justify-center gap-8 px-8 py-10 md:items-center md:justify-between md:px-12 text-center lg:text-left">
-            <div className="max-w-2xl">
+            <div className="max-w-2xl" data-aos="fade-right">
               <h2 className="font-sora text-[38px] font-asemibold leading-tight text-white md:text-[54px]">
                 Trusted. Verified.
 
@@ -28,6 +28,8 @@ export const CTASection = () => {
             <button
               type="button"
               className=" rounded-xl border border-white/85 px-4 lg:px-8 py-3 lg:py-3.5 text-[14px] lg:text-base font-light text-white transition hover:bg-white/10"
+              data-aos="fade-left"
+              data-aos-delay="120"
             >
               Get Started
             </button>

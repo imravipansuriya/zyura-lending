@@ -41,8 +41,11 @@ const cards = [
 
 export const FeatureCards = () => {
   return (
-    <section className="pt-25 lg:pt-36">
-      <div className="mx-auto mb-16 px-6 max-w-[755px] lg:max-w-[855px] ">
+    <section className="pt-25 lg:pt-36" data-aos="fade-up">
+      <div
+        className="mx-auto mb-16 px-6 max-w-[755px] lg:max-w-[855px] "
+        data-aos="fade-up"
+      >
         <h2 className="mx-auto text-center font-sora text-2xl md:text-3xl lg:text-[48px] font-semibold text-dark">
           Because your success in medicine needs more than effort{" "}
           <span className="font-pattaya text-[1.02em] font-normal leading-[1.08] inline">
@@ -52,10 +55,12 @@ export const FeatureCards = () => {
       </div>
       <div className="mx-auto container px-5">
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {cards.map((card) => (
+          {cards.map((card, index) => (
             <article
               key={card.title}
               className="flex min-h-auto lg:min-h-[460px] flex-col rounded-2xl p-6 cursor-pointer hover:shadow-lg transition-shadow duration-300"
+              data-aos="fade-up"
+              data-aos-delay={index * 90}
               style={{ backgroundColor: card.bg }}
             >
               <span className="inline-flex w-fit rounded-full border border-[#353b48]/40 px-3 py-1 text-xs font-medium text-[#49505c]">

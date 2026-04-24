@@ -4,9 +4,12 @@ import doctorExam from "../assets/doctor-exam.jpg"
 
 export const StudyExamModeSection = () => {
   return (
-    <section className="relative overflow-hidden py-16 md:py-24 lg:py-36">
+    <section className="relative overflow-hidden pt-16 md:pt-24 lg:pt-36" data-aos="fade-up">
       <div className="mx-auto container px-4 sm:px-5">
-        <div className="mx-auto mb-10 max-w-[780px] px-2 md:mb-16 lg:max-w-[855px]">
+        <div
+          className="mx-auto mb-10 max-w-[780px] px-2 md:mb-16 lg:max-w-[855px]"
+          data-aos="fade-up"
+        >
           <h2 className="mx-auto text-center font-sora text-2xl md:text-3xl lg:text-[48px] font-semibold text-dark">
             Study mode vs  
             <span className="font-pattaya text-[1.02em] font-normal leading-[1.08] inline"> Exam mode </span>
@@ -18,7 +21,10 @@ export const StudyExamModeSection = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-12 md:gap-14">
-          <article className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8">
+          <article
+            className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8"
+            data-aos="fade-up"
+          >
             <div>
               <img
                 src={doctorStudy}
@@ -37,6 +43,8 @@ export const StudyExamModeSection = () => {
               <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div
                   className="group rounded-2xl p-4 font-sora text-[14px] leading-relaxed text-[#2f3643] transition-transform duration-300 hover:-translate-y-0.5 sm:text-[15px]"
+                  data-aos="fade-up"
+                  data-aos-delay="60"
                   style={{ backgroundColor: "#F6F8E9" }}
                 >
                   <div className="h-14 w-14 flex items-center justify-center mb-3 rounded-full bg-brand-gradient text-white transition-transform duration-300 group-hover:rotate-[3deg]">
@@ -46,6 +54,8 @@ export const StudyExamModeSection = () => {
                 </div>
                 <div
                   className="group rounded-2xl p-4 font-sora text-[14px] leading-relaxed text-[#2f3643] transition-transform duration-300 hover:-translate-y-0.5 sm:text-[15px]"
+                  data-aos="fade-up"
+                  data-aos-delay="120"
                   style={{ backgroundColor: "#E9F8EF" }}
                 >
                   <div className="h-14 w-14 flex items-center justify-center mb-3 rounded-full bg-brand-gradient text-white transition-transform duration-300 group-hover:rotate-[3deg]">
@@ -55,6 +65,8 @@ export const StudyExamModeSection = () => {
                 </div>
                 <div
                   className="group rounded-2xl p-4 font-sora text-[14px] leading-relaxed text-[#2f3643] transition-transform duration-300 hover:-translate-y-0.5 sm:text-[15px]"
+                  data-aos="fade-up"
+                  data-aos-delay="180"
                   style={{ backgroundColor: "#E0EAF9" }}
                 >
                   <div className="h-14 w-14 flex items-center justify-center mb-3 rounded-full bg-brand-gradient text-white transition-transform duration-300 group-hover:rotate-[3deg]">
@@ -64,6 +76,8 @@ export const StudyExamModeSection = () => {
                 </div>
                 <div
                   className="group rounded-2xl p-4 font-sora text-[14px] leading-relaxed text-[#2f3643] transition-transform duration-300 hover:-translate-y-0.5 sm:text-[15px]"
+                  data-aos="fade-up"
+                  data-aos-delay="240"
                   style={{ backgroundColor: "#F8E9F3" }}
                 >
                   <div className="h-14 w-14 flex items-center justify-center mb-3 rounded-full bg-brand-gradient text-white transition-transform duration-300 group-hover:rotate-[3deg]">
@@ -75,7 +89,10 @@ export const StudyExamModeSection = () => {
             </div>
           </article>
 
-          <article className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8">
+          <article
+            className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8"
+            data-aos="fade-up"
+          >
             <div className="order-2 text-blackLight md:order-1">
               <h3 className="font-sora text-xl font-semibold lg:text-3xl leading-tight">
                 Exam Mode
@@ -87,6 +104,8 @@ export const StudyExamModeSection = () => {
               <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div
                   className="group rounded-2xl p-4 font-sora text-[14px] leading-relaxed text-[#2f3643] transition-transform duration-300 hover:-translate-y-0.5 sm:text-[15px]"
+                  data-aos="fade-up"
+                  data-aos-delay="60"
                   style={{ backgroundColor: "#F6F8E9" }}
                 >
                   <div className="h-14 w-14 flex items-center justify-center mb-3 rounded-full bg-brand-gradient text-white transition-transform duration-300 group-hover:rotate-[3deg]">
@@ -96,6 +115,8 @@ export const StudyExamModeSection = () => {
                 </div>
                 <div
                   className="group rounded-2xl p-4 font-sora text-[14px] leading-relaxed text-[#2f3643] transition-transform duration-300 hover:-translate-y-0.5 sm:text-[15px]"
+                  data-aos="fade-up"
+                  data-aos-delay="120"
                   style={{ backgroundColor: "#E9F8EF" }}
                 >
                   <div className="h-14 w-14 flex items-center justify-center mb-3 rounded-full bg-brand-gradient text-white transition-transform duration-300 group-hover:rotate-[3deg]">
@@ -105,6 +126,8 @@ export const StudyExamModeSection = () => {
                 </div>
                 <div
                   className="group rounded-2xl p-4 font-sora text-[14px] leading-relaxed text-[#2f3643] transition-transform duration-300 hover:-translate-y-0.5 sm:text-[15px]"
+                  data-aos="fade-up"
+                  data-aos-delay="180"
                   style={{ backgroundColor: "#E0EAF9" }}
                 >
                   <div className="h-14 w-14 flex items-center justify-center mb-3 rounded-full bg-brand-gradient text-white transition-transform duration-300 group-hover:rotate-[3deg]">
@@ -114,6 +137,8 @@ export const StudyExamModeSection = () => {
                 </div>
                 <div
                   className="group rounded-2xl p-4 font-sora text-[14px] leading-relaxed text-[#2f3643] transition-transform duration-300 hover:-translate-y-0.5 sm:text-[15px]"
+                  data-aos="fade-up"
+                  data-aos-delay="240"
                   style={{ backgroundColor: "#F8E9F3" }}
                 >
                   <div className="h-14 w-14 flex items-center justify-center mb-3 rounded-full bg-brand-gradient text-white transition-transform duration-300 group-hover:rotate-[3deg]">
