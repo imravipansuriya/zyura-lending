@@ -33,9 +33,15 @@ const plannerCards: PlannerCard[] = [
 
 export const SmartStudyPlannerSection = () => {
   return (
-    <section className="mx-auto   relative overflow-hidden py-25 lg:py-36 bg-[#e9f8ef] px-6  md:px-10 md:py-14 lg:px-14">
+    <section
+      className="mx-auto   relative overflow-hidden py-25 lg:py-36 bg-[#e9f8ef] px-6  md:px-10 md:py-14 lg:px-14"
+      data-aos="fade-up"
+    >
       <div className="container mx-auto px-5">
-        <div className="relative  mb-16 text-center border-b border-gray-300 pb-10">
+        <div
+          className="relative  mb-16 text-center border-b border-gray-300 pb-10"
+          data-aos="fade-up"
+        >
           <span className="absolute left-0 top-0 text-5xl text-primary md:text-6xl">
             *
           </span>
@@ -54,12 +60,14 @@ export const SmartStudyPlannerSection = () => {
         </div>
 
         <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {plannerCards.map((card) => {
+          {plannerCards.map((card, index) => {
             const Icon = card.icon;
             return (
               <article
                 key={card.title}
                 className="flex min-h-[300px] flex-col items-center justify-between rounded-[26px] bg-white/60 px-6 py-8 text-left"
+                data-aos="fade-up"
+                data-aos-delay={index * 90}
               >
                 <div className="flex h-[86px] w-[86px] items-center justify-center rounded-full border border-gray-300 bg-brand-gradient">
                   <Icon className="h-9 w-9 text-white" strokeWidth={1.8} />
@@ -76,4 +84,3 @@ export const SmartStudyPlannerSection = () => {
     </section>
   );
 };
-

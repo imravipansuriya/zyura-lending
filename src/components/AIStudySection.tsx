@@ -44,10 +44,10 @@ const studyCards = [
 
 export const AIStudySection = () => {
   return (
-    <section className="pt-25 lg:pt-36">
+    <section className="pt-25 lg:pt-36" data-aos="fade-up">
       <div className="mx-auto container px-5">
         <div className="grid gap-4 grid-rows-1 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-2xl w-full overflow-hidden">
+          <div className="rounded-2xl w-full overflow-hidden" data-aos="fade-right">
             <img
               src={innovativeStudyImage}
               alt="Students using a laptop for AI-powered study"
@@ -55,7 +55,10 @@ export const AIStudySection = () => {
             />
           </div>
 
-          <div className="rounded-2xl bg-[#d9e3f2] p-5 md:p-6 lg:p-8 w-full">
+          <div
+            className="rounded-2xl bg-[#d9e3f2] p-5 md:p-6 lg:p-8 w-full"
+            data-aos="fade-left"
+          >
             <p className="font-sora  text-[14px] lg:text-[20px] text-[#4f5a69]">AI-Powered Learning Platform</p>
             <h2 className="mt-2 mx-auto text-left font-sora text-2xl md:text-3xl lg:text-[48px] font-semibold text-dark">
               Innovative AI Study for Medical -{" "}
@@ -70,7 +73,11 @@ export const AIStudySection = () => {
             <div className="relative mt-6">
               <div className="study-scroll max-h-[620px] space-y-4 overflow-y-auto pr-2 md:pr-3">
                 {studyCards.map((card) => (
-                  <article key={card.title} className="rounded-xl bg-white p-5 md:p-6 last-of-type:mb-10">
+                  <article
+                    key={card.title}
+                    className="rounded-xl bg-white p-5 md:p-6 last-of-type:mb-10"
+                     
+                  >
                     <span className="inline-flex rounded-full border border-[#8d939b] px-3 py-1 font-sora text-[10px] lg:text-[11px] text-[#666d76]">
                       {card.tag}
                     </span>

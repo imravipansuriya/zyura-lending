@@ -57,16 +57,27 @@ const benefitCards: BenefitCard[] = [
 
 export const BenefitsStripSection = () => {
   return (
-    <section className=" relative overflow-hidden py-25 lg:py-36">
+    <section className=" relative overflow-hidden py-25 lg:py-36" data-aos="fade-up">
       <div className="mx-auto container px-5">
-        <h2 className="mx-auto text-center font-sora text-2xl md:text-3xl lg:text-[48px] font-semibold text-dark">
+        <h2
+          className="mx-auto text-center font-sora text-2xl md:text-3xl lg:text-[48px] font-semibold text-dark"
+          data-aos="fade-up"
+        >
           Prepare. Practice. Perform.
         </h2>
-        <p className="mx-auto mt-4 max-w-3xl text-center font-sora text-[18px] text-[#29434c]">
+        <p
+          className="mx-auto mt-4 max-w-3xl text-center font-sora text-[18px] text-[#29434c]"
+          data-aos="fade-up"
+          data-aos-delay="80"
+        >
           With ZYURA you can
         </p>
 
-        <div className="mt-10 overflow-hidden rounded-[32px] border border-[#b8cdd4]">
+        <div
+          className="mt-10 overflow-hidden rounded-[32px] border border-[#b8cdd4]"
+          data-aos="fade-up"
+          data-aos-delay="120"
+        >
           <Swiper
             spaceBetween={0}
             slidesPerView={1}
@@ -76,12 +87,14 @@ export const BenefitsStripSection = () => {
             }}
             className="h-full"
           >
-            {benefitCards.map((card) => {
+            {benefitCards.map((card, index) => {
               const Icon = card.icon;
               return (
                 <SwiperSlide key={card.title} className="h-auto">
                   <article
                     className="flex justify-between h-full min-h-[360px] flex-col border-r border-[#b8cdd4] px-7 py-10"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 90}
                     style={{ backgroundColor: card.bg }}
                   >
                     <Icon className="h-12 w-12 text-primary" strokeWidth={1.7} />

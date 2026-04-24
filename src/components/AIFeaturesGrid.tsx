@@ -102,8 +102,11 @@ const gridCards: GridCard[] = [
 
 export const AIFeaturesGrid = () => {
   return (
-    <section className="pt-25 lg:pt-36">
-      <div className="mx-auto mb-16 px-6 max-w-[755px] lg:max-w-[855px ">
+    <section className="pt-25 lg:pt-36" data-aos="fade-up">
+      <div
+        className="mx-auto mb-16 px-6 max-w-[755px] lg:max-w-[855px "
+        data-aos="fade-up"
+      >
         <h2 className="mx-auto text-center font-sora text-2xl md:text-3xl lg:text-[48px] font-semibold text-dark">
           We transform the way you study with AI
           <span className="font-pattaya text-[1.02em] font-normal leading-[1.08] inline">
@@ -121,6 +124,8 @@ export const AIFeaturesGrid = () => {
                 <article
                   key={`image-${index}`}
                   className="overflow-hidden rounded-xl hidden md:block"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 70}
                 >
                   <img
                     src={card.image}
@@ -135,6 +140,8 @@ export const AIFeaturesGrid = () => {
               <article
                 key={`text-${card.title}`}
                 className="flex justify-between min-h-[250px] flex-col rounded-xl p-5 md:min-h-[280px]"
+                data-aos="fade-up"
+                data-aos-delay={index * 70}
                 style={{ backgroundColor: card.bg }}
               >
                 <h3 className="font-sora text-xl lg:text-2xl leading-tight text-[#1d2430]">
