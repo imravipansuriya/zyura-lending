@@ -21,7 +21,7 @@ const plans = [
 
 export const PricingSection = () => {
   return (
-    <section className="relative overflow-hidden py-25 lg:py-36 mt-25 lg:mt-36">
+    <section className="relative overflow-hidden py-25 lg:py-36">
       <img
         src={PickYourPerfect}
         alt="Medical professionals collaborating"

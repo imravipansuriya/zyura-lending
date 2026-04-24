@@ -112,7 +112,7 @@ export const AIFeaturesGrid = () => {
         </h2>
       </div>
 
-      <div className="mx-auto max-w-[1920px] px-5">
+      <div className="mx-auto container px-5">
         <div className="mt-10 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
 
           {gridCards.map((card, index) => {

@@ -14,15 +14,14 @@ export const CTASection = () => {
         <div className="mx-auto max-w-[1920px]">
           <div className="relative flex min-h-[300px] md:min-h-[340px] flex-col lg:flex-row justify-center gap-8 px-8 py-10 md:items-center md:justify-between md:px-12 text-center lg:text-left">
             <div className="max-w-2xl">
-              <h2 className="font-sora text-[38px] font-semibold leading-tight text-white md:text-[54px]">
-                Study smarter. Learn faster.{" "}
-                <span className="font-pattaya font-normal">Grow stronger.</span>
+              <h2 className="font-sora text-[38px] font-asemibold leading-tight text-white md:text-[54px]">
+                Trusted. Verified.
+
+                <span className="font-pattaya font-normal"> Secure..</span>
               </h2>
 
               <p className="mt-4 font-sora text-[16px] font-light leading-relaxed text-white/95">
-                Start your journey toward mastering medical concepts with
-                AI-powered tools, smart practice, and a focused learning
-                experience.
+                All mentors and content creators are verified professionals. ZYURA is designed to keep your data, progress, and educational materials protected and private.
               </p>
             </div>
 

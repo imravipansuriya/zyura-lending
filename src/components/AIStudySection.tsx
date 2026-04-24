@@ -45,7 +45,7 @@ const studyCards = [
 export const AIStudySection = () => {
   return (
     <section className="pt-25 lg:pt-36">
-      <div className="mx-auto max-w-[1920px] px-5">
+      <div className="mx-auto container px-5">
         <div className="grid gap-4 grid-rows-1 lg:grid-cols-[1fr_1fr]">
           <div className="rounded-2xl w-full overflow-hidden">
             <img

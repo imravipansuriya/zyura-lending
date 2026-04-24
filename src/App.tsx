@@ -7,6 +7,10 @@ import { AIFeaturesGrid } from './components/AIFeaturesGrid'
 import { PricingSection } from './components/PricingSection'
 import { StudyExamModeSection } from './components/StudyExamModeSection'
 import { PersonalGroupStudySection } from './components/PersonalGroupStudySection'
+import { SmartStudyPlannerSection } from './components/SmartStudyPlannerSection'
+import { ContentCredibilitySection } from './components/ContentCredibilitySection'
+import { BenefitsStripSection } from './components/BenefitsStripSection'
+import { WhoCanUseSection } from './components/WhoCanUseSection'
 import { AIStudySection } from './components/AIStudySection'
 import { MentorsSection } from './components/MentorsSection'
 import { CTASection } from './components/CTASection'
@@ -32,10 +36,17 @@ function App() {
         <ValueBanner />
         <FeatureCards />
         <AIFeaturesGrid />
-        <PricingSection />
+        
         <StudyExamModeSection />
+        <ContentCredibilitySection />
         <PersonalGroupStudySection />
+        
+        <SmartStudyPlannerSection />
+        <BenefitsStripSection />
+        <PricingSection />
+        
         <AIStudySection />
+        <WhoCanUseSection />
         <MentorsSection />
         <CTASection />
         <Footer />

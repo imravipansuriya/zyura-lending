@@ -17,6 +17,7 @@ export default {
       colors: {
         primary: '#063C79',
         dark: '#1C1E23',
+        blackLight: '#2b3441',
 
         brand: '#063C79',
         surface: {
